@@ -2133,3 +2133,1906 @@ footer {
 
 }
 
+/* ==============================
+   STAFF LOGIN
+================================ */
+
+.staff-login-page {
+    min-height: 100vh;
+
+    background: var(--cream);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+.staff-login-card {
+    width: min(440px, 100%);
+
+    padding: 55px 50px;
+
+    background: var(--soft-white);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(81, 68, 61, 0.08);
+
+    text-align: center;
+}
+
+.staff-logo {
+    display: inline-block;
+
+    margin-bottom: 55px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.staff-logo span {
+    color: var(--brown);
+}
+
+.staff-login-card h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 58px;
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    margin: 15px 0;
+}
+
+.staff-login-card h1 em {
+    font-style: italic;
+}
+
+.staff-subtitle {
+    color: var(--light-brown);
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+.staff-field {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+.staff-field label {
+    display: block;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.staff-field input {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: var(--cream);
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 12px;
+
+    outline: none;
+}
+
+.staff-field input:focus {
+    border-color: var(--brown);
+}
+
+.staff-login-btn {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 16px 20px;
+
+    border-radius: 50px;
+
+    background: var(--brown);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: transform .2s ease;
+}
+
+.staff-login-btn:hover {
+    transform: translateY(-2px);
+}
+
+.staff-login-btn span {
+    font-size: 18px;
+}
+
+.back-home {
+    display: inline-block;
+
+    margin-top: 30px;
+
+    font-size: 10px;
+
+    color: var(--light-brown);
+}
+
+/* ==============================
+   STAFF DASHBOARD
+================================ */
+
+.dashboard-body {
+    background: var(--cream);
+    min-height: 100vh;
+}
+
+.dashboard-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    width: 240px;
+    height: 100vh;
+
+    padding: 35px 25px;
+
+    background: var(--soft-white);
+
+    border-right: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-logo {
+    font-size: 18px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 65px;
+}
+
+.dashboard-logo span {
+    color: var(--brown);
+}
+
+.sidebar-label {
+    font-size: 8px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: var(--light-brown);
+
+    margin-bottom: 15px;
+}
+
+.dashboard-nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.dashboard-nav a {
+    padding: 13px 15px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 11px;
+}
+
+.dashboard-nav a span {
+    width: 20px;
+
+    font-size: 14px;
+
+    opacity: .7;
+}
+
+.dashboard-nav a.active,
+.dashboard-nav a:hover {
+    background: var(--cream);
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.sidebar-bottom a {
+    font-size: 10px;
+
+    color: var(--light-brown);
+}
+
+.dashboard-main {
+    margin-left: 240px;
+
+    padding: 50px 55px 80px;
+}
+
+.dashboard-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    font-weight: 500;
+
+    margin-top: 8px;
+}
+
+.dashboard-header h1 em {
+    font-style: italic;
+}
+
+.staff-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.staff-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--pink);
+
+    font-weight: 700;
+}
+
+.staff-profile strong,
+.staff-profile span {
+    display: block;
+}
+
+.staff-profile strong {
+    font-size: 11px;
+}
+
+.staff-profile span {
+    margin-top: 3px;
+
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+
+/* STATS */
+
+.dashboard-stats {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: var(--soft-white);
+
+    padding: 22px;
+
+    border-radius: 20px;
+
+    border: 1px solid var(--border);
+
+    display: flex;
+
+    gap: 15px;
+}
+
+.stat-icon {
+    font-size: 20px;
+}
+
+.stat-card p {
+    margin: 0 0 5px;
+
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    color: var(--light-brown);
+}
+
+.stat-card strong {
+    display: block;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+}
+
+.stat-card small {
+    display: block;
+
+    margin-top: 4px;
+
+    font-size: 8px;
+
+    color: var(--light-brown);
+}
+
+
+/* PANELS */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr;
+
+    gap: 20px;
+}
+
+.dashboard-panel {
+    padding: 28px;
+
+    background: var(--soft-white);
+
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
+}
+
+.panel-heading {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 25px;
+}
+
+.panel-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin-top: 6px;
+}
+
+.panel-heading > a {
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+
+/* BOOKINGS */
+
+.booking-row {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 15px 0;
+
+    border-top: 1px solid var(--border);
+}
+
+.guest-avatar {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--cream);
+
+    font-size: 11px;
+
+    font-weight: 700;
+}
+
+.guest-info {
+    flex: 1;
+}
+
+.guest-info strong,
+.guest-info span {
+    display: block;
+}
+
+.guest-info strong {
+    font-size: 11px;
+}
+
+.guest-info span {
+    margin-top: 4px;
+
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+.status {
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+.confirmed {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.pending {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+
+/* ROOM STATUS */
+
+.room-status-item {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 17px 0;
+
+    border-top: 1px solid var(--border);
+
+    font-size: 10px;
+}
+
+.room-status-item strong {
+    font-size: 8px;
+
+    padding: 6px 10px;
+
+    border-radius: 50px;
+}
+
+.room-available {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.room-occupied {
+    background: #f5e7e7;
+
+    color: #956464;
+}
+
+.room-cleaning {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+
+/* QUICK ACTIONS */
+
+.quick-actions {
+    margin-top: 35px;
+}
+
+.quick-action-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.quick-action-grid a {
+    padding: 18px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    font-size: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.quick-action-grid a:hover {
+    background: var(--pink);
+}
+
+.quick-action-grid span {
+    font-size: 16px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 1000px) {
+
+    .dashboard-stats {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .quick-action-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .dashboard-sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        border-right: none;
+
+        border-bottom: 1px solid var(--border);
+    }
+
+    .dashboard-nav {
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+    .sidebar-bottom {
+        display: none;
+    }
+
+    .dashboard-main {
+        margin-left: 0;
+
+        padding: 35px 20px;
+    }
+
+    .dashboard-header {
+        align-items: flex-start;
+
+        gap: 20px;
+
+        flex-direction: column;
+    }
+
+    .dashboard-header h1 {
+        font-size: 35px;
+    }
+
+}
+
+/* DASHBOARD LAYOUT FIX */
+
+.dashboard-body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.dashboard-main {
+    margin-left: 240px !important;
+    padding: 50px 55px !important;
+    width: calc(100% - 240px);
+    box-sizing: border-box;
+}
+
+.dashboard-sidebar {
+    left: 0 !important;
+    top: 0 !important;
+    width: 240px !important;
+    box-sizing: border-box;
+}
+
+.dashboard-stats {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 15px;
+}
+
+.dashboard-grid {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1.5fr 1fr !important;
+    gap: 20px;
+}
+
+.quick-action-grid {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 12px;
+}
+
+/* ==============================
+   BOOKINGS MANAGEMENT
+================================ */
+
+.management-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-end;
+
+    margin-bottom: 35px;
+}
+
+.management-header h1 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 45px;
+
+    font-weight: 500;
+
+    margin: 8px 0;
+}
+
+.management-header h1 em {
+    font-style: italic;
+}
+
+.management-subtitle {
+    color: var(--light-brown);
+
+    font-size: 11px;
+}
+
+.management-primary-btn {
+    padding: 14px 22px;
+
+    background: var(--brown);
+
+    color: white;
+
+    border-radius: 50px;
+
+    font-size: 10px;
+
+    font-weight: 600;
+}
+
+
+/* CONTROLS */
+
+.booking-controls {
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.booking-search {
+    flex: 1;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 12px 15px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    color: var(--light-brown);
+}
+
+.booking-search input {
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+}
+
+.booking-controls select {
+    padding: 12px 15px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 12px;
+
+    background: var(--soft-white);
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+
+    color: var(--brown);
+
+    outline: none;
+}
+
+
+/* TABLE CARD */
+
+.booking-table-card {
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+}
+
+.booking-table-top {
+    padding: 25px 28px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.booking-table-top h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin-top: 5px;
+}
+
+.table-date {
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+
+/* TABLE */
+
+.booking-table-wrapper {
+    overflow-x: auto;
+}
+
+.booking-table-wrapper table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+.booking-table-wrapper th {
+    padding: 15px 20px;
+
+    text-align: left;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--light-brown);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.booking-table-wrapper td {
+    padding: 17px 20px;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid var(--border);
+
+    white-space: nowrap;
+}
+
+.booking-table-wrapper tr:last-child td {
+    border-bottom: none;
+}
+
+.booking-table-wrapper tbody tr:hover {
+    background: var(--cream);
+}
+
+
+/* GUEST */
+
+.table-guest {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.table-avatar {
+    width: 30px;
+
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--pink);
+
+    font-size: 9px;
+
+    font-weight: 700;
+}
+
+
+/* STATUS */
+
+.table-status {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.table-status.confirmed {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.table-status.pending {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+.table-status.checked-in {
+    background: #e9e7f5;
+
+    color: #69618a;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .management-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .management-header h1 {
+        font-size: 36px;
+    }
+
+    .booking-controls {
+        flex-direction: column;
+    }
+
+    .booking-table-top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+
+/* ==============================
+   ROOM MANAGEMENT
+================================ */
+
+.room-count {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+}
+
+.room-count strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+.room-count span {
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+
+/* SUMMARY */
+
+.room-summary {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.room-summary-card {
+    padding: 20px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.summary-dot {
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+}
+
+.available-dot {
+    background: #7b9c80;
+}
+
+.occupied-dot {
+    background: #b77b7b;
+}
+
+.cleaning-dot {
+    background: #c69a5d;
+}
+
+.maintenance-dot {
+    background: #8b82a8;
+}
+
+.room-summary-card p {
+    margin: 0;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    color: var(--light-brown);
+}
+
+.room-summary-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+
+/* ROOM CARDS */
+
+.rooms-management-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.managed-room-card {
+    padding: 27px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+}
+
+.managed-room-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.room-number {
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: var(--light-brown);
+}
+
+.room-status-badge {
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.room-status-badge.available {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.room-status-badge.occupied {
+    background: #f5e7e7;
+
+    color: #956464;
+}
+
+.room-status-badge.cleaning {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+.room-status-badge.maintenance {
+    background: #ebe8f4;
+
+    color: #69618a;
+}
+
+.managed-room-card h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin: 25px 0 7px;
+}
+
+.room-description {
+    font-size: 10px;
+
+    line-height: 1.6;
+
+    color: var(--light-brown);
+
+    max-width: 350px;
+}
+
+.managed-room-info {
+    display: flex;
+
+    gap: 25px;
+
+    padding: 18px 0;
+
+    margin-top: 20px;
+
+    border-top: 1px solid var(--border);
+
+    font-size: 9px;
+}
+
+.managed-room-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.room-condition {
+    font-size: 8px;
+
+    color: var(--light-brown);
+}
+
+.managed-room-bottom button {
+    padding: 9px 13px;
+
+    border: 1px solid var(--border);
+
+    background: transparent;
+
+    border-radius: 50px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.managed-room-bottom button:hover {
+    background: var(--cream);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    .room-summary {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .rooms-management-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .room-summary {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ==============================
+   GUEST MANAGEMENT
+================================ */
+
+.guest-total {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+}
+
+.guest-total strong {
+    font-family: "Playfair Display", serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.guest-total span {
+    font-size: 9px;
+    color: var(--light-brown);
+}
+
+
+/* SEARCH */
+
+.guest-search-area {
+    margin-bottom: 20px;
+}
+
+.guest-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 17px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 13px;
+}
+
+.guest-search span {
+    color: var(--light-brown);
+}
+
+.guest-search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 10px;
+}
+
+
+/* TABLE */
+
+.guest-table-card {
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+}
+
+.guest-table-header {
+    padding: 25px 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.guest-table-header h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin-top: 5px;
+}
+
+.guest-table-header > span {
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+.guest-table-wrapper {
+    overflow-x: auto;
+}
+
+.guest-table-wrapper table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+}
+
+.guest-table-wrapper th {
+    padding: 15px 20px;
+
+    text-align: left;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    color: var(--light-brown);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.guest-table-wrapper td {
+    padding: 18px 20px;
+
+    font-size: 9px;
+
+    border-bottom: 1px solid var(--border);
+
+    white-space: nowrap;
+}
+
+.guest-table-wrapper tr:last-child td {
+    border-bottom: none;
+}
+
+.guest-table-wrapper tbody tr:hover {
+    background: var(--cream);
+}
+
+
+/* GUEST PERSON */
+
+.guest-table-person {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.large-guest-avatar {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--pink);
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.guest-table-person strong,
+.guest-table-person span {
+    display: block;
+}
+
+.guest-table-person strong {
+    font-size: 10px;
+}
+
+.guest-table-person span {
+    margin-top: 3px;
+
+    font-size: 7px;
+
+    color: var(--light-brown);
+}
+
+.guest-table-wrapper td small {
+    font-size: 7px;
+
+    color: var(--light-brown);
+}
+
+
+/* STATUS */
+
+.guest-status {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 50px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+}
+
+.guest-status.staying {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.guest-status.arriving {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .guest-total {
+        align-self: flex-start;
+    }
+
+    .guest-table-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+}
+
+/* ==============================
+   HOUSEKEEPING
+================================ */
+
+.housekeeping-total {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 18px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+}
+
+.housekeeping-total strong {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+.housekeeping-total span {
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+
+/* SUMMARY */
+
+.housekeeping-summary {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+}
+
+.housekeeping-summary-card {
+    padding: 20px;
+
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.housekeeping-summary-card p {
+    margin: 0;
+
+    font-size: 7px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 700;
+
+    color: var(--light-brown);
+}
+
+.housekeeping-summary-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-weight: 500;
+}
+
+.progress-dot {
+    background: #8b82a8;
+}
+
+
+/* TASK CARD */
+
+.housekeeping-card {
+    background: var(--soft-white);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+}
+
+.housekeeping-card-header {
+    padding: 25px 28px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.housekeeping-card-header h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 27px;
+
+    font-weight: 500;
+
+    margin-top: 5px;
+}
+
+.housekeeping-card-header > span {
+    font-size: 9px;
+
+    color: var(--light-brown);
+}
+
+
+/* TASK ROW */
+
+.housekeeping-task {
+    padding: 18px 28px;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr auto auto;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.housekeeping-task:last-child {
+    border-bottom: none;
+}
+
+.task-room {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+.task-room-number {
+    width: 38px;
+
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: var(--cream);
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 14px;
+}
+
+.task-room strong,
+.task-room span {
+    display: block;
+}
+
+.task-room strong {
+    font-size: 10px;
+}
+
+.task-room span {
+    margin-top: 4px;
+
+    font-size: 8px;
+
+    color: var(--light-brown);
+}
+
+.task-staff span,
+.task-staff strong {
+    display: block;
+}
+
+.task-staff span {
+    font-size: 7px;
+
+    color: var(--light-brown);
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.task-staff strong {
+    margin-top: 4px;
+
+    font-size: 9px;
+}
+
+.housekeeping-status {
+    padding: 7px 11px;
+
+    border-radius: 50px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.housekeeping-status.cleaning {
+    background: #fff2dc;
+
+    color: #9a733e;
+}
+
+.housekeeping-status.progress {
+    background: #ebe8f4;
+
+    color: #69618a;
+}
+
+.housekeeping-status.ready {
+    background: #e8f3e9;
+
+    color: #56765a;
+}
+
+.housekeeping-task button {
+    padding: 9px 13px;
+
+    border: 1px solid var(--border);
+
+    background: transparent;
+
+    border-radius: 50px;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 8px;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.housekeeping-task button:hover {
+    background: var(--cream);
+}
+
+
+/* NOTE */
+
+.housekeeping-note {
+    margin-top: 20px;
+
+    padding: 20px 23px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 15px;
+
+    background: var(--pink);
+
+    border-radius: 18px;
+}
+
+.housekeeping-note > span {
+    font-size: 18px;
+}
+
+.housekeeping-note strong {
+    font-size: 10px;
+}
+
+.housekeeping-note p {
+    margin-top: 5px;
+
+    font-size: 9px;
+
+    line-height: 1.6;
+
+    color: var(--light-brown);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .housekeeping-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .housekeeping-task {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .housekeeping-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .housekeeping-card-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .housekeeping-task {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+}
+
+.staff-access {
+    display: inline-block;
+    padding: 11px 20px;
+
+    background: var(--brown);
+    color: white !important;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-decoration: none !important;
+
+    margin-top: 15px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.staff-access:hover {
+    opacity: 0.85;
+}
